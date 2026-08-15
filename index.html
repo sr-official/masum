@@ -71,7 +71,7 @@
     align-items:center;
     justify-content:center;
     position:relative;
-    padding:64px 22px;
+    padding:40px 22px;
     text-align:center;
     overflow:hidden;
   }
@@ -488,7 +488,7 @@
     box-shadow:var(--shadow);
     padding:26px 24px;
     margin-top:26px;
-    text-align:left;
+    text-align:justify;
     opacity:0;
     transform:translateY(14px);
     transition:all .6s ease .3s;
@@ -731,19 +731,23 @@ const CONFIG = {
   // fails to load, it automatically falls back to the emoji too.
   moments: [
     { image:"images/image-1.jpeg", emoji:"📸", caption:"That trip we still talk about" },
-    // { image:"", emoji:"🌆", caption:"Sunset walks, best conversations" },
-    // { image:"", emoji:"☕", caption:"Every ordinary Tuesday with you" }
+    { image:"images/image-2.jpeg", emoji:"📸", caption:"Sunset walks, best conversations" },
+    { image:"images/image-3.jpeg", emoji:"📸", caption:"Every ordinary day with you" },
+    { image:"images/image-4.jpeg", emoji:"📸", caption:"That's called destiny" },
+    { image:"images/image-5.jpeg", emoji:"📸", caption:"Make something special together" },
   ],
 
   letterBody: `Happy Birthday, my dear love!😙🥀
-  <br>
-Today is all about
-celebrating the most amazing person in my life. You bring much happiness, love, and warmth into my world, and  I’m truly grateful for every moment we share together 🥹💕. hope this new year of your life brings you endless happiness good health, success, and all the dreams your heart desire
-💫 Keep smiling because your smile is my favorite.🥀🌝
-Thank you for being my biggest blessing and making every12 day so special. I promise to always support, cherish, and love you with all my heart.💝
-Wishing you the most beautiful
-birthday ever! Enjoy your special day to the fullest.💝🎁
-I love you so much!💕😙`,
+
+    Today is all about celebrating the most amazing person in my life. You bring much happiness, love, and warmth into my world, and  I’m truly grateful for every moment we share together 😍💖. hope this new year of your life brings you endless happiness good health, success, and all the dreams your heart desire.
+    
+    💫Keep smiling because your smile is my favorite.🥀🌝
+    
+    Thank you for being my biggest blessing and making every12 day so special. I promise to always support, cherish, and love you with all my heart.💝
+    
+    Wishing you the most beautiful birthday ever! Enjoy your special day to the fullest.💝🎁
+    
+    I love you so much!💕😙`,
 
   giftFinalMessage: "This little page is my gift to you — made with every bit of love I've got. 🎁",
 
@@ -761,7 +765,7 @@ $('#coverName').textContent = CONFIG.recipientName;
 $('#heroName').textContent = CONFIG.recipientName;
 $('#finaleName').textContent = CONFIG.recipientName;
 $('#letterGreeting').textContent = `Dear ${CONFIG.recipientName},`;
-$('#letterBody').textContent = CONFIG.letterBody;
+$('#letterBody').innerHTML = CONFIG.letterBody.replace(/\n/g, '<br>');
 $('#letterSign').textContent = `— ${CONFIG.senderName}`;
 $('#giftFinal').textContent = CONFIG.giftFinalMessage;
 $('#finaleMsg').textContent = CONFIG.finaleMessage.replace('[NAME]', CONFIG.recipientName);
