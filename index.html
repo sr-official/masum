@@ -96,7 +96,7 @@
     font-size:clamp(14px,2.6vw,17px);
     color:#6b3350;
     max-width:420px;
-    margin:14px auto 0;
+    margin:24px 0px;
     line-height:1.5;
   }
 
@@ -564,7 +564,7 @@
   <section class="screen" id="screen-hero">
     <div class="floaters" id="fl1"></div>
     <p class="eyebrow">happy birthday</p>
-    <h1 class="heading"><span class="name" id="heroName">Aanya</span></h1>
+    <h1 class="heading"><span class="name" id="heroName">Ikra</span></h1>
     <svg class="doodle-cake" viewBox="0 0 120 110" fill="none">
       <rect x="14" y="60" width="92" height="40" rx="10" fill="#f3c6cf"/>
       <rect x="14" y="42" width="92" height="24" rx="10" fill="#efb0bd"/>
@@ -666,7 +666,7 @@
     </div>
     <p class="tap-hint" id="envHint">tap the envelope to open</p>
     <div class="letter-full" id="letterFull">
-      <p id="letterGreeting">Dear Aanya,</p>
+      <p id="letterGreeting">Dear Ikra,</p>
       <p id="letterBody"></p>
       <p class="sign" id="letterSign">— with love</p>
     </div>
@@ -703,7 +703,7 @@
     <div class="floaters" id="fl8"></div>
     <div class="finale-art">🧸🎀</div>
     <p class="eyebrow">lots of love for you</p>
-    <h2 class="heading" style="font-size:clamp(26px,6vw,40px)">Happy Birthday, <span class="name" id="finaleName">Aanya</span></h2>
+    <h2 class="heading" style="font-size:clamp(26px,6vw,40px)">Happy Birthday, <span class="name" id="finaleName">Ikra</span></h2>
     <p class="subtext finale-msg" id="finaleMsg">Hope you loved your surprise. Here's to another beautiful year ahead.</p>
     <div class="btn-row">
       <button class="btn btn-primary" id="replayBtn">↻ Replay</button>
@@ -718,8 +718,8 @@
    CONFIG — edit everything here to personalize the surprise.
    ============================================================ */
 const CONFIG = {
-  recipientName: "Aanya",
-  senderName: "Rehan",
+  recipientName: "Ikra",
+  senderName: "Masum",
 
   // Words revealed one-per-balloon (needs exactly 4 for the 4 balloons)
   balloonWords: ["You", "are", "so", "special"],
@@ -730,12 +730,20 @@ const CONFIG = {
   // If "image" is left blank, the emoji is shown instead — and if an image
   // fails to load, it automatically falls back to the emoji too.
   moments: [
-    { image:"", emoji:"📸", caption:"That trip we still talk about" },
-    { image:"", emoji:"🌆", caption:"Sunset walks, best conversations" },
-    { image:"", emoji:"☕", caption:"Every ordinary Tuesday with you" }
+    { image:"images/image-1.jpeg", emoji:"📸", caption:"That trip we still talk about" },
+    // { image:"", emoji:"🌆", caption:"Sunset walks, best conversations" },
+    // { image:"", emoji:"☕", caption:"Every ordinary Tuesday with you" }
   ],
 
-  letterBody: "You are kind, you are loyal, and you make every room brighter just by being in it. Every moment with you feels like a gift I didn't know I needed. On your special day, I hope you feel exactly how loved you are.",
+  letterBody: `Happy Birthday, my dear love!😙🥀
+  <br>
+Today is all about
+celebrating the most amazing person in my life. You bring much happiness, love, and warmth into my world, and  I’m truly grateful for every moment we share together 🥹💕. hope this new year of your life brings you endless happiness good health, success, and all the dreams your heart desire
+💫 Keep smiling because your smile is my favorite.🥀🌝
+Thank you for being my biggest blessing and making every12 day so special. I promise to always support, cherish, and love you with all my heart.💝
+Wishing you the most beautiful
+birthday ever! Enjoy your special day to the fullest.💝🎁
+I love you so much!💕😙`,
 
   giftFinalMessage: "This little page is my gift to you — made with every bit of love I've got. 🎁",
 
